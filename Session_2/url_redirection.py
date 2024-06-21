@@ -23,15 +23,16 @@ def fail():
 def scored(name, num):
     if num < 30:
         time.sleep(1)
-        return redirect(url_for("fail")) # we will pass the name of the function instead of the name of the endpoint
+        return redirect(url_for("failed")) # we will pass the name of the function instead of the name of the endpoint
     else:
         time.sleep(1)
         return redirect(url_for("passed")) # we will pass the name of the function instead of the name of the endpoint
         
+
 
 if __name__ == "__main__":
     app.run(debug = True)
 
 
     
-
+    
